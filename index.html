@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -75,6 +77,24 @@
         </nav>
     </section>
     <section id="main">
+        <div class="grid">
+            <div class="grid-item grid-item--width1 grid-item--height1">
+                <div class="content">
+                    <img src="DSGN.png" alt="">
+                    <p>Associates</p>
+                    <p>Studio</p>
+                    <p>Design</p>
+                    <ul class="icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-invision"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-item grid-item--width2 grid-item--height2"></div>
+
+        </div>
 
     </section>
     <section id="footer">
@@ -87,10 +107,19 @@
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+<script src="masonry.pkgd.js"></script>
+
 <script>
     $('.handle').on('click', function () {
         $('nav ul').toggleClass('show');
     });
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 160,
+        gutter: 0
+
+    });
+
 
 </script>
 
