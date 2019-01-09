@@ -14,8 +14,8 @@ ul{
     font-weight: bold;
 }
 #header{
+    background: #e9eae2;
     .topnav{
-        background: #e9eae2;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -43,6 +43,25 @@ ul{
             }
         }
     }
+    form{
+        font-size: 0;
+        input[type=text]{
+            width: 300px !important;
+            padding: 10px 15px 10px 15px;
+            border: 1px solid #e2e3db;
+            color: #a3a3a3;
+            border-radius: 5px;
+            outline-style: none;
+         }
+         input[type=submit]{
+             padding: 10px 10px 10px 10px;
+             background-color: #efba22;
+             color: #fff;
+             border-radius: 5px;
+             outline-style: none;
+         }
+    }
+ 
     nav{
         ul{
             background-color: #000;
@@ -119,7 +138,7 @@ ul{
         border: 1px solid #000;
       }
       .item1{
-         width: 65%;
+         width: 69%;
          background-image: url("../img/home_free_02.jpg") !important;
          background-position: center center;
          background-repeat: no-repeat;
@@ -159,22 +178,25 @@ ul{
       }
       .item2{
           position: relative;
-          width: 35%;
+          width: 31%;
           background-color: #7acec3;
           .line{
             position: absolute;
             top: 50%;
             left: 50%;
-            transform:  translateX(-50%) translateY(-50%) rotate(137deg);
-            width: 137%;
+            -webkit-transform: translateX(-50%) translateY(-50%) rotate(137deg);
+            transform: translateX(-50%) translateY(-50%) rotate(133deg);
+            width: 145%;
             height: 1px;
             background-color: #fff;
-          }
+        }
           .contentItem2{
               position: absolute;
+              top: 4%;
+              left: 8%;
           }
           .logoTreca{
-            padding: 15px 10px 15px 10px;
+            padding: 5px 10px 5px 15px;
             max-width: 260px;
             border: 3px solid #fff;
             font-family: serif;
@@ -255,17 +277,59 @@ ul{
           }
       }
       .item3{
-         width: 30%;
-      }
+        position: relative;
+        width: 31%;
+        background-color: #ebb240;
+        .line{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%) rotate(137deg);
+            transform: translateX(-50%) translateY(-50%) rotate(133deg);
+            width: 145%;
+            height: 1px;
+            background-color: #fff;
+        }   
+        .contentItem3{
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            .listItem3{
+               
+                li{
+                    color: #fff;
+                    font-size: 19pt;
+                }
+                li:first-child span{
+                    color: #000;
+                }
+                li:not(:first-child){
+                    padding-left: 26px !important;
+                }
+                i{
+                    color: #fff;
+                }
+            }
+           p{
+                position: absolute;
+                left: 75%;
+                font-size: 35pt;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 400;
+                text-align: right;
+            }
+        }
+     }
       .item4{
-          width: 40%;
+          width: 38%;
       }
       .item5{
-          width: 30%;
+          width: 31%;
           height: 250px !important;
       }
       .item6{
-          width: 30%;
+          width: 25%;
           height: 464px;
       }
       .grid-item--height1 { height: 493px; }

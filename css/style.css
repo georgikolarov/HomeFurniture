@@ -18,8 +18,11 @@ ul {
   font-weight: bold;
 }
 
-#header .topnav {
+#header {
   background: #e9eae2;
+}
+
+#header .topnav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,6 +68,27 @@ ul {
 
 #header .topnav .contacts .contentList img {
   padding-right: 5px;
+}
+
+#header form {
+  font-size: 0;
+}
+
+#header form input[type=text] {
+  width: 300px !important;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #e2e3db;
+  color: #a3a3a3;
+  border-radius: 5px;
+  outline-style: none;
+}
+
+#header form input[type=submit] {
+  padding: 10px 10px 10px 10px;
+  background-color: #efba22;
+  color: #fff;
+  border-radius: 5px;
+  outline-style: none;
 }
 
 #header nav ul {
@@ -150,7 +174,7 @@ ul {
 }
 
 #main .item1 {
-  width: 65%;
+  width: 69%;
   background-image: url("../img/home_free_02.jpg") !important;
   background-position: center center;
   background-repeat: no-repeat;
@@ -203,7 +227,7 @@ ul {
 
 #main .item2 {
   position: relative;
-  width: 35%;
+  width: 31%;
   background-color: #7acec3;
 }
 
@@ -212,18 +236,20 @@ ul {
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(137deg);
-          transform: translateX(-50%) translateY(-50%) rotate(137deg);
-  width: 137%;
+  transform: translateX(-50%) translateY(-50%) rotate(133deg);
+  width: 145%;
   height: 1px;
   background-color: #fff;
 }
 
 #main .item2 .contentItem2 {
   position: absolute;
+  top: 4%;
+  left: 8%;
 }
 
 #main .item2 .logoTreca {
-  padding: 15px 10px 15px 10px;
+  padding: 5px 10px 5px 15px;
   max-width: 260px;
   border: 3px solid #fff;
   font-family: serif;
@@ -322,20 +348,66 @@ ul {
 }
 
 #main .item3 {
-  width: 30%;
+  position: relative;
+  width: 31%;
+  background-color: #ebb240;
+}
+
+#main .item3 .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(137deg);
+  transform: translateX(-50%) translateY(-50%) rotate(133deg);
+  width: 145%;
+  height: 1px;
+  background-color: #fff;
+}
+
+#main .item3 .contentItem3 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+#main .item3 .contentItem3 .listItem3 li {
+  color: #fff;
+  font-size: 19pt;
+}
+
+#main .item3 .contentItem3 .listItem3 li:first-child span {
+  color: #000;
+}
+
+#main .item3 .contentItem3 .listItem3 li:not(:first-child) {
+  padding-left: 26px !important;
+}
+
+#main .item3 .contentItem3 .listItem3 i {
+  color: #fff;
+}
+
+#main .item3 .contentItem3 p {
+  position: absolute;
+  left: 75%;
+  font-size: 35pt;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  text-align: right;
 }
 
 #main .item4 {
-  width: 40%;
+  width: 38%;
 }
 
 #main .item5 {
-  width: 30%;
+  width: 31%;
   height: 250px !important;
 }
 
 #main .item6 {
-  width: 30%;
+  width: 25%;
   height: 464px;
 }
 
