@@ -13,6 +13,33 @@ ul{
 .bold{
     font-weight: bold;
 }
+.dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #7ab90d;
+    border-radius: 50%; 
+    margin-right: 10px;
+  }
+  .arrowColor{
+      color: #ebb240;
+  }
+  .textUppercase{
+      text-transform: uppercase;
+  }
+  .myBtn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #e2007a;
+    font-size: 18px;
+    padding: 5px;
+    img{
+        padding-right: 5px;
+    }
+}
+.myBtn:hover{
+    border-bottom: 2px solid #45093f;
+}
 #header{
     background: #e9eae2;
     .topnav{
@@ -44,6 +71,7 @@ ul{
         }
     }
     form{
+        text-align: center;
         font-size: 0;
         input[type=text]{
             width: 300px !important;
@@ -238,42 +266,24 @@ ul{
                 font-size: 15px;
                 color: #fff;
               }
-              .dot{
-                  display: inline-block;
-                  width: 10px;
-                  height: 10px;
-                  background-color: #7ab90d;
-                  border-radius: 50%; 
-                  margin-right: 10px;
-                }
+           
           }
           .cont3{
-              font-weight: 900;
               font-size: 30px;
                 p:first-of-type{
                     margin-top: 10px;
                     margin-bottom: 0;
                     text-decoration: line-through;
                     color: #545454;
+                    font-weight: bold;
                 }
                 p:last-of-type{
                     text-decoration: none;
                     color: #cd006d;
                     margin: 0px;
+                    font-weight: bold;
                 }
-                img{
-                    padding-right: 10px;
-                }
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    background-color: #e2007a;
-                    font-size: 18px;
-                    padding: 10px
-                }
-                a:hover{
-                    border-bottom: 2px solid #45093f;
-                }
+               
           }
       }
       .item3{
@@ -322,15 +332,71 @@ ul{
         }
      }
       .item4{
-          width: 38%;
+        position: relative;
+        width: 38%;
+        background-color: #fbfbfb;
+        .contentItem4{
+            display: flex;
+            padding-top: 40px;
+            padding-left: 70px;           
+             .contInfo{
+                padding-right: 30px;
+            }
+            .listItem4{
+                padding-bottom: 70px;
+                    li{
+                        font-size: 18px;
+                    }
+            }
+            .image{
+                padding-top: 50px;
+            }
+        }
       }
       .item5{
           width: 31%;
+          position: relative;
           height: 250px !important;
+          background-color: #eef2f3;
+          .contentItem5{
+              display: flex;
+              justify-content: space-between;
+              padding-top: 15px;
+              .contInfo{
+                width: 60%;
+                padding-left: 30px;
+                p{
+                    margin: 5px;
+                }
+              }
+              
+              .listItem5{
+                  margin: 0px;
+                  h2{
+                      margin: 5px;
+                  }
+              }
+              .image{
+                  padding-top: 20px;
+                  .product{
+                    max-width: 100%;
+                }
+              }
+          }
       }
       .item6{
-          width: 25%;
+          width: 31%;
           height: 464px;
+          position: relative;
+          background-color: #f6f7f2;
+          .contentItem6{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .contInfo{
+                  display: flex;
+              }
+          }
       }
       .grid-item--height1 { height: 493px; }
       .grid-item--height2 { height: 260px; }
