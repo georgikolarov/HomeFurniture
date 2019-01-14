@@ -214,7 +214,7 @@ ul{
           position: relative;
           width: 31%;
           background-color: #7acec3;
-          background: linear-gradient(to bottom right, #7acec3, #7acec3 50%, white 51%, #7acec3 50%, #7acec3);        border: 1px solid white;
+          background: linear-gradient(to bottom right, #7acec3, #7acec3 50%, white 50.5%, #7acec3 50%, #7acec3);  
 
           .contentItem2{
               position: absolute;
@@ -288,14 +288,12 @@ ul{
         position: relative;
         width: 31%;
         background-color: #ebb240;
-        background: linear-gradient(to bottom right, #ebb240, #ebb240 50%, white 51%, #ebb240 50%, #ebb240);        border: 1px solid white;
-
-     
+        background: linear-gradient(to bottom right, #ebb240, #ebb240 50%, white 50.5%, #ebb240 50%, #ebb240);   
+        
         .contentItem3{
             position: absolute;
             top: 10%;
             left: 20%;
-            transform: translate(-10%, -20%);
             .listItem3{
                
                 li{
@@ -326,7 +324,7 @@ ul{
       .item4{
         position: relative;
         width: 38%;
-        background-color: #fbfbfb;
+        background-color: #e9eae2;
         .contentItem4{
             display: flex;
             padding-top: 40px;
@@ -378,7 +376,6 @@ ul{
       }
       .item6{
           width: 31%;
-          height: 464px;
           position: relative;
           background-color: #f6f7f2;
           
@@ -386,7 +383,6 @@ ul{
               display: flex;
               flex-direction: column;
               align-items: center;
-              padding-top: 20px;
               .contInfo{
                   display: flex;
                   .listItem6{
@@ -398,22 +394,82 @@ ul{
               }
           }
       }
+      .item7{
+        width: 20%;
+        position: relative;
+        background: rgb(89,111,126); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(89,111,126,1) 0%, rgba(108,120,130,1) 46%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(89,111,126,1) 0%,rgba(108,120,130,1) 46%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(89,111,126,1) 0%,rgba(108,120,130,1) 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596f7e', endColorstr='#6c7882',GradientType=0 ); 
+        .contentItem7{
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            .listItem7, span{
+                color: #fff;
+            }
+            .contInfo{
+                z-index: 9999;
+            }
+            .image{
+                position: absolute;
+                display: inline-flex;
+                bottom: 0;
+                right: 25px;
+            }
+        }
+    }
+      .item8{
+          position: relative;
+          width: 49%;
+          background-image: url("../img/fauteuil2.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          .contentItem8{
+            .listItem8{
+                position: absolute;
+                top: 19%;
+                left: 50%;
+                transform: translate(-19%, -50%);
+            }
+            .contRight{
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                transform: translate(-15%, -15%);
+            }
+          }
+      }
+      .item9{
+          width: 31%;
+          height: 243px;
+          background-color: #fff;
+          position: relative;
+        .contentItem9{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            .listItem9{
+                margin: 5px 0px 5px 0px;
+                h2{
+                    margin: 5px 0px 5px 0px;
+                }
+            }
+            .contInfo{
+                p{
+                    margin: 5px 0px 5px 0px;
+                }
+            }
+        }
+      }
       .grid-item--height1 { height: 493px; }
-      .grid-item--height2 { height: 260px; }
+      .grid-item--height2 { height: 465px; }
 }
    
     @media screen and (max-width: 1500px){
         #main{
-            .line{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%) rotate(145deg);
-                max-width: 120%;
-                height: 1px;
-                background-color: #fff;
-                
-            }
             .grid {
                width: 100% !important;
                 background: #EEE;

@@ -268,9 +268,8 @@ img {
   position: relative;
   width: 31%;
   background-color: #7acec3;
-  background: -webkit-gradient(linear, left top, right bottom, from(#7acec3), color-stop(50%, #7acec3), color-stop(51%, white), color-stop(50%, #7acec3), to(#7acec3));
-  background: linear-gradient(to bottom right, #7acec3, #7acec3 50%, white 51%, #7acec3 50%, #7acec3);
-  border: 1px solid white;
+  background: -webkit-gradient(linear, left top, right bottom, from(#7acec3), color-stop(50%, #7acec3), color-stop(50.5%, white), color-stop(50%, #7acec3), to(#7acec3));
+  background: linear-gradient(to bottom right, #7acec3, #7acec3 50%, white 50.5%, #7acec3 50%, #7acec3);
 }
 
 #main .item2 .contentItem2 {
@@ -358,17 +357,14 @@ img {
   position: relative;
   width: 31%;
   background-color: #ebb240;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ebb240), color-stop(50%, #ebb240), color-stop(51%, white), color-stop(50%, #ebb240), to(#ebb240));
-  background: linear-gradient(to bottom right, #ebb240, #ebb240 50%, white 51%, #ebb240 50%, #ebb240);
-  border: 1px solid white;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ebb240), color-stop(50%, #ebb240), color-stop(50.5%, white), color-stop(50%, #ebb240), to(#ebb240));
+  background: linear-gradient(to bottom right, #ebb240, #ebb240 50%, white 50.5%, #ebb240 50%, #ebb240);
 }
 
 #main .item3 .contentItem3 {
   position: absolute;
   top: 10%;
   left: 20%;
-  -webkit-transform: translate(-10%, -20%);
-          transform: translate(-10%, -20%);
 }
 
 #main .item3 .contentItem3 .listItem3 li {
@@ -401,7 +397,7 @@ img {
 #main .item4 {
   position: relative;
   width: 38%;
-  background-color: #fbfbfb;
+  background-color: #e9eae2;
 }
 
 #main .item4 .contentItem4 {
@@ -472,7 +468,6 @@ img {
 
 #main .item6 {
   width: 31%;
-  height: 464px;
   position: relative;
   background-color: #f6f7f2;
 }
@@ -488,7 +483,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
 }
 
 #main .item6 .contentItem6 .contInfo {
@@ -505,25 +499,115 @@ img {
   padding-top: 50px;
 }
 
+#main .item7 {
+  width: 20%;
+  position: relative;
+  background: #596f7e;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#596f7e), color-stop(46%, #6c7882));
+  background: linear-gradient(to bottom, #596f7e 0%, #6c7882 46%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596f7e', endColorstr='#6c7882',GradientType=0 );
+}
+
+#main .item7 .contentItem7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+#main .item7 .contentItem7 .listItem7, #main .item7 .contentItem7 span {
+  color: #fff;
+}
+
+#main .item7 .contentItem7 .contInfo {
+  z-index: 9999;
+}
+
+#main .item7 .contentItem7 .image {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  bottom: 0;
+  right: 25px;
+}
+
+#main .item8 {
+  position: relative;
+  width: 49%;
+  background-image: url("../img/fauteuil2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main .item8 .contentItem8 .listItem8 {
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  -webkit-transform: translate(-19%, -50%);
+          transform: translate(-19%, -50%);
+}
+
+#main .item8 .contentItem8 .contRight {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  -webkit-transform: translate(-15%, -15%);
+          transform: translate(-15%, -15%);
+}
+
+#main .item9 {
+  width: 31%;
+  height: 243px;
+  background-color: #fff;
+  position: relative;
+}
+
+#main .item9 .contentItem9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main .item9 .contentItem9 .listItem9 {
+  margin: 5px 0px 5px 0px;
+}
+
+#main .item9 .contentItem9 .listItem9 h2 {
+  margin: 5px 0px 5px 0px;
+}
+
+#main .item9 .contentItem9 .contInfo p {
+  margin: 5px 0px 5px 0px;
+}
+
 #main .grid-item--height1 {
   height: 493px;
 }
 
 #main .grid-item--height2 {
-  height: 260px;
+  height: 465px;
 }
 
 @media screen and (max-width: 1500px) {
-  #main .line {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(145deg);
-            transform: translateX(-50%) translateY(-50%) rotate(145deg);
-    max-width: 120%;
-    height: 1px;
-    background-color: #fff;
-  }
   #main .grid {
     width: 100% !important;
     background: #EEE;
