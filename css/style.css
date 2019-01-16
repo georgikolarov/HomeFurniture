@@ -408,7 +408,7 @@ img {
 
 #main .item3 .contentItem3 .listItem3 li {
   color: #fff;
-  font-size: 19pt;
+  font-size: 25px;
 }
 
 #main .item3 .contentItem3 .listItem3 li:first-child span {
@@ -416,7 +416,7 @@ img {
 }
 
 #main .item3 .contentItem3 .listItem3 li:not(:first-child) {
-  padding-left: 26px !important;
+  padding-left: 25px !important;
 }
 
 #main .item3 .contentItem3 .listItem3 i {
@@ -638,12 +638,133 @@ img {
   margin: 5px 0px 5px 0px;
 }
 
+#main .item10 {
+  width: 49%;
+  background-color: #fff;
+  position: relative;
+}
+
+#main .item10 .contentItem10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+}
+
+#main .item10 .contentItem10 .contInfo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#main .item10 .contentItem10 .contInfo2 .listItem10 {
+  padding-right: 30px;
+  margin: 0px;
+}
+
+#main .item10 .contentItem10 .contInfo2 .listItem10 h2 {
+  margin: 5px 0px 5px 0px;
+}
+
+#main .item10 .contentItem10 .contInfo2 .contRight p {
+  margin: 10px 0px 10px 0px;
+}
+
+#main .item10 .contentItem10 .contInfo2 .contRight p:first-child {
+  margin-top: 10px;
+}
+
+#main .item11 {
+  width: 20%;
+  background-image: url("../img/img3.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+#main .item11 .contentItem11 .listItem9 {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+#main .item11 .contentItem11 .listItem9 li span {
+  display: inline-block;
+}
+
+#main .item11 .contentItem11 .bottom {
+  position: absolute;
+  bottom: 6%;
+  left: 35%;
+}
+
+#main .item11 .contentItem11 .bottom p {
+  margin: 10px 0px 10px 0px;
+}
+
+#main .item12 {
+  width: 31%;
+  background-color: #ebb240;
+  position: relative;
+  -webkit-gradient: linear, left top, right bottom, from(#ebb240), color-stop(49%, #ebb240), color-stop(49%, white), color-stop(50%, #ebb240), to(#ebb240);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ebb240), color-stop(50%, #ebb240), color-stop(50.5%, white), color-stop(50%, #ebb240), to(#ebb240));
+  background: linear-gradient(to bottom right, #ebb240, #ebb240 50%, white 50.5%, #ebb240 50%, #ebb240);
+}
+
+#main .item12 .contentItem12 .listItem12 {
+  position: absolute;
+  left: 10%;
+}
+
+#main .item12 .contentItem12 .listItem12 li {
+  color: #fff;
+  font-size: 25px;
+}
+
+#main .item12 .contentItem12 .listItem12 li:first-child span {
+  color: #000;
+}
+
+#main .item12 .contentItem12 .listItem12 li:not(:first-child) {
+  padding-left: 25px !important;
+}
+
+#main .item12 .contentItem12 .listItem12 i {
+  color: #fff;
+}
+
+#main .item13 {
+  width: 33%;
+  background-color: #ff9b6d;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff9b6d), color-stop(50%, #ff9b6d), color-stop(50.5%, white), color-stop(50%, #ff9b6d), to(#ff9b6d));
+  background: linear-gradient(to bottom right, #ff9b6d, #ff9b6d 50%, white 50.5%, #ff9b6d 50%, #ff9b6d);
+  position: relative;
+}
+
 #main .grid-item--height1 {
   height: 493px;
 }
 
 #main .grid-item--height2 {
   height: 465px;
+}
+
+#main .grid-item--height3 {
+  height: 300px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -681,7 +802,7 @@ img {
     position: absolute;
     left: 0%;
   }
-  #main .item4, #main .item5, #main .item6, #main .item7, #main .item8, #main .item9 {
+  #main .item4, #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12 {
     width: 49.6%;
   }
 }
@@ -745,7 +866,7 @@ img {
   #main .item4 {
     width: 100%;
   }
-  #main .item5, #main .item6, #main .item7, #main .item8, #main .item9 {
+  #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12 {
     width: 100%;
   }
 }

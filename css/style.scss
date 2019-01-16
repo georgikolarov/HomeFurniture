@@ -316,13 +316,13 @@ ul{
                
                 li{
                     color: #fff;
-                    font-size: 19pt;
+                    font-size: 25px;
                 }
                 li:first-child span{
                     color: #000;
                 }
                 li:not(:first-child){
-                    padding-left: 26px !important;
+                    padding-left: 25px !important;
                 }
                 i{
                     color: #fff;
@@ -360,6 +360,9 @@ ul{
                 padding-top: 50px;
             }
         }
+      }
+      .item4:after{
+
       }
       .item5{
           width: 31%;
@@ -482,8 +485,102 @@ ul{
             }
         }
       }
+      .item10{
+        width: 49%;
+        background-color: #fff;
+        position: relative;
+            .contentItem10{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-top: 25px;
+                    .contInfo2{
+                        display: flex;
+                        flex-direction: row;
+                        .listItem10{
+                            padding-right: 30px;
+                            margin: 0px;
+                            h2{
+                                margin: 5px 0px 5px 0px;
+                            }
+                        }
+                        .contRight{
+                            p{
+                                margin: 10px 0px 10px 0px;
+                            }
+                            p:first-child{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+        }
+        .item11{
+            width: 20%;
+            background-image: url("../img/img3.jpg");
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            .contentItem11{
+                .listItem9{
+                    position: absolute;
+                    top: 5%;
+                    right: 10%;
+                    li{
+                        span{
+                            display: inline-block;
+                        }
+                    }
+                }
+                .bottom{
+                    position: absolute;
+                    bottom: 6%;
+                    left: 35%;
+                    p{
+                        margin: 10px 0px 10px 0px;
+                    }
+                }
+            }
+        }
+
+        .item12{
+            width: 31%;
+            background-color: #ebb240;
+            position: relative;
+            -webkit-gradient:(linear, left top, right bottom, from(#ebb240), color-stop(49%, #ebb240), color-stop(49%, white), color-stop(50%, #ebb240), to(#ebb240));
+            background: linear-gradient(to bottom right, #ebb240, #ebb240 50%, white 50.5%, #ebb240 50%, #ebb240);   
+            .contentItem12{
+                .listItem12{
+                    position: absolute;
+                    left: 10%;
+                    li{
+                        color: #fff;
+                        font-size: 25px;
+                    }
+                    li:first-child span{
+                        color: #000;
+                    }
+                    li:not(:first-child){
+                        padding-left: 25px !important;
+                    }
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .item13{
+            width: 33%;
+            background-color: #ff9b6d; 
+            background: linear-gradient(to bottom right, #ff9b6d, #ff9b6d 50%, white 50.5%, #ff9b6d 50%, #ff9b6d);  
+            position: relative;
+        }
       .grid-item--height1 { height: 493px; }
       .grid-item--height2 { height: 465px; }
+      .grid-item--height3 { height: 300px; }
+
 }
    
     @media screen and (max-width: 1500px){
@@ -526,7 +623,7 @@ ul{
                       }
                   }
               }
-              .item4, .item5, .item6, .item7, .item8, .item9{
+              .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12{
                   width: 49.6%;
               }
             }        
@@ -589,7 +686,7 @@ ul{
         .item4{
             width: 100%;
         }
-        .item5, .item6, .item7, .item8, .item9{
+        .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12{
             width: 100%;
         }
      
