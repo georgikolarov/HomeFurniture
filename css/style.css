@@ -59,6 +59,10 @@ img {
   border-bottom: 2px solid #45093f;
 }
 
+.pr-1 {
+  padding-right: 5px;
+}
+
 #header {
   background: #e9eae2;
 }
@@ -268,7 +272,7 @@ img {
 #main .item1 .content {
   position: absolute;
   content: " ";
-  top: 24%;
+  top: 25%;
   left: 20%;
   -webkit-transform: translate(-20%, -20%);
           transform: translate(-20%, -20%);
@@ -306,6 +310,10 @@ img {
   font-size: 18pt;
   text-decoration: none;
   color: #7acec3;
+}
+
+#main .item1 .content ul li a:hover {
+  color: #29a595;
 }
 
 #main .item2 {
@@ -810,10 +818,7 @@ img {
 }
 
 #main .item14 .contentItem14 .cont14 {
-  margin-top: 120px;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -913,6 +918,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 #main .item16 .contentItem16 .box2 {
@@ -926,6 +934,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 #main .item16 .contentItem16 .box2 .contInfo {
@@ -951,6 +962,10 @@ img {
 }
 
 #main .item17 .contentItem17 {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  padding-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,7 +973,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -985,8 +999,25 @@ img {
   #main .item1 {
     width: 100%;
   }
+  #main .item1 .content {
+    position: absolute;
+    content: " ";
+    top: 27%;
+    left: 10%;
+    -webkit-transform: translate(-20%, -20%);
+    transform: translate(-20%, -20%);
+    z-index: 999;
+  }
   #main .item2 {
-    width: 49.7%;
+    width: 50%;
+  }
+  #main .item2 .contentItem2 {
+    position: absolute;
+    max-width: 280px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #main .item2 .contentItem2 .treca {
     font-size: 45px;
@@ -1005,18 +1036,45 @@ img {
     max-width: 240px;
   }
   #main .item3 {
-    width: 49.7%;
+    width: 50%;
   }
-  #main .item3 .contentItem3 p {
+  #main .item3 .contentItem3 {
     position: absolute;
-    left: 0%;
+    top: 28%;
+    left: 36%;
+    -webkit-transform: translate(-30%, -40%);
+            transform: translate(-30%, -40%);
   }
-  #main .item4, #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12, #main .item13, #main .item14, #main .item15, #main .item16, #main .item17 {
-    width: 49.6%;
+  #main .item4 {
+    position: relative;
+    width: 50%;
+    background-color: #e9eae2;
+  }
+  #main .item4 .contentItem4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 120px;
+  }
+  #main .item4 .contentItem4 .contInfo {
+    padding-right: 30px;
+  }
+  #main .item4 .contentItem4 .listItem4 {
+    padding-bottom: 70px;
+  }
+  #main .item4 .contentItem4 .listItem4 li {
+    font-size: 18px;
+  }
+  #main .item4 .contentItem4 .image {
+    padding-top: 50px;
+  }
+  #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12, #main .item13, #main .item14, #main .item15, #main .item16, #main .item17 {
+    width: 50%;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1500px) and (max-width: 992px) {
   #header .topnav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1045,7 +1103,7 @@ img {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1500px) and (max-width: 1040px) {
   #header .topnav .contacts {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
@@ -1077,6 +1135,12 @@ img {
   }
   #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12, #main .item13, #main .item14, #main .item15, #main .item16, #main .item17 {
     width: 100%;
+  }
+  #main .item14 .image {
+    max-width: 70%;
+  }
+  #main .item14 .image img {
+    max-width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
