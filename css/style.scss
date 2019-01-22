@@ -722,6 +722,49 @@ ul{
                 align-items: center;
             }
         }
+        .item18{
+            width: 49%;
+            background-color: #fdfdfd; 
+            position: relative;
+            .contentItem18{
+                display: flex;
+                flex-direction: column;
+                .listItem18, p, h2{
+                    margin: 5px 0px 5px 0px;
+                }
+                .textStart{
+                    margin-left: 85px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: start;                
+                }
+                .textCenter{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;                
+                }
+                .textEnd{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: flex-end;     
+                    margin-right: 35px;           
+                }
+            }
+        }
+        .item19{
+            width: 25%;
+            background-color: #f7f7f3;
+            position: relative;
+        }
+
+        .item20{
+            width: 26%;
+            background-color: #fafafa;
+            position: relative;
+        }
       .grid-item--height1 { height: 493px; }
       .grid-item--height2 { height: 465px; }
       .grid-item--height3 { height: 300px; }
@@ -807,8 +850,17 @@ ul{
               
              .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15, .item16, .item17{
                 width: 50%;
+            }
+            .item14{
+                .image{
+                    max-width: 70%;
+                    img{
+                        max-width: 90%;
+                    }
+                }
             }       
     }
+}
     @media screen and (max-width: 992px){
    #header{
     .topnav{
@@ -882,4 +934,3 @@ ul{
      
     }
 }
-    }
