@@ -59,6 +59,9 @@ ul{
 .pr-1{
     padding-right: 5px;
 }
+.pl-5{
+    padding-left: 20px;
+}
 .d-none{
     display: none;
 }
@@ -526,7 +529,7 @@ ul{
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
-                padding-top: 25px;
+                padding-top: 20px;
                     .contInfo2{
                         display: flex;
                         flex-direction: row;
@@ -1037,7 +1040,10 @@ ul{
             display: flex;
             flex-direction: row;
             align-items: center;
-             .listItem26, .listitem27, p, h2{
+             .listItem26, p, h2{
+                margin: 5px 0px 5px 0px;
+            }
+            .listItem27{
                 margin: 5px 0px 5px 0px;
             }
             .box1, .box2{
@@ -1046,22 +1052,15 @@ ul{
                 align-items: center;
                 justify-content: space-around;
                 width: 100%;
-                height: 100%;
+                .image{
+                    padding-top: 20px;
+                    max-width: 66%;
+                }
             }
             .box1{
                 background-color: #e1e1e1;
             }
-            .image{
-                padding-top: 20px;
-                max-width: 66%;
-            }
         }
-    }
-
-    .item27{
-        width: 40%;
-        background-color: #fff;
-        position: relative;
     }
     .item28{
         width: 20%;
@@ -1138,11 +1137,14 @@ ul{
     border-top: 10px solid #f4b800;
     border-bottom: 20px solid #636363;
   .containerFooter{
-    padding: 0px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     .box{
+        h3{
+            margin: 5px 0px 5px 0px;
+        }
         color: #fff;
         h3:before{
           content: '';
@@ -1155,7 +1157,21 @@ ul{
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-left: -10px;
+            line-height: 0.2;
+            ul{
+                margin: 10px 0px 15px 0px;
+                li:nth-child(2){
+                    padding-top: 15px;
+                    color: #c6376f;
+                }
+            }
         }
+      }
+      .box:last-of-type{
+        display: flex;
+        flex-direction: column;
+
       }
   }
 }
@@ -1221,12 +1237,12 @@ ul{
                 .contentItem4{
                     display: flex;
                     padding-top: 40px;
-                    padding-left: 120px;           
+                    padding-left: 40px;           
                      .contInfo{
-                        padding-right: 30px;
+                        padding-right: 0px;
                     }
                     .listItem4{
-                        padding-bottom: 70px;
+                        padding-bottom: 0px;
                             li{
                                 font-size: 18px;
                             }
@@ -1239,46 +1255,26 @@ ul{
               
              .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, 
              .item14, .item15, .item16, .item17, .item18, .item19, .item20, .item21, .item22, .item23, .item24, .item25, .item26, .item27, .item28{
-                width: 50%;
+                width: 49%;
             }
             .item14{
                 .image{
-                    max-width: 70%;
+                    max-width: 60%;
                     img{
                         max-width: 90%;
                     }
                 }
-            }       
+            }
+            .item25{
+                .image{
+                    max-width: 50%;
+                    padding-right: 20px;
+                }
+            }     
     }
 }
-    @media screen and (max-width: 992px){
-   #header{
-    .topnav{
-        flex-direction: column-reverse;
-    }
-    nav ul{
-        max-height: 0px;
-        border: 0px solid #8c8c88 !important;
-    }
-    nav ul li{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 15px;
-        border: 0px solid #fff !important;
-    }
-    .show{
-        max-height: 25em; 
-    }
-    .handle{
-        display: block;
-    }
-    header h1{
-        font-size: 3em;
-    }
-   }
-   
-  }
-  @media screen and (max-width: 1040px){
+
+@media screen and (max-width: 1040px){
     #header{
         .topnav{
             .contacts{
@@ -1315,13 +1311,97 @@ ul{
         }
         .item14{
             .image{
-                max-width: 70%;
+                max-width: 60%;
                 img{
                     max-width: 90%;
                 }
             }
         }
-
-     
     }
-} 
+    @media screen and (max-width: 992px){
+   #header{
+    .topnav{
+        flex-direction: column-reverse;
+    }
+    nav ul{
+        max-height: 0px;
+        border: 0px solid #8c8c88 !important;
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        border: 0px solid #fff !important;
+    }
+    .show{
+        max-height: 25em; 
+    }
+    .handle{
+        display: block;
+    }
+    header h1{
+        font-size: 3em;
+    }
+   }
+   #main{
+       .item21{
+          .listItem21{
+              padding-left: 0px !important;
+          }
+       }
+       .item25{
+           .titleCont25{
+                margin: 40px 0px 90px 30px;
+           }
+           .cont25{
+               padding-left: 25px;
+           }
+       }
+    .item26{
+        .image{
+            padding-top: 15px !important;
+            max-width: 78% !important;
+        }
+        .box1{
+            background-color: #fff !important;
+        }
+        .box2{
+         background-color: #e1e1e1;
+     }
+    }
+    .item27{
+     .image{
+         padding-top: 15px !important;
+         max-width: 78% !important;
+     }
+     .box1{
+      background-color: #e1e1e1;
+  }
+ }
+ .bottomInfo{
+    justify-content: center !important;
+     .contentBottomInfo{
+         flex-direction: column !important;
+         padding: 0px 20px 0px 20px;
+        .container{
+            max-width: 500px;
+            font-size: 12px !important;
+            padding-bottom: 10px;
+        }
+     }
+   }
+   }
+   #footer {
+    .containerFooter {
+        flex-wrap: wrap;
+    }
+    h3{
+        margin: 5px 0px 5px 0px;
+    }
+    .box:last-of-type{
+        line-height: 1 !important;
+    }
+   }
+
+}
+}
