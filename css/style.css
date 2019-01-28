@@ -1515,6 +1515,7 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  padding: 0px 20px 0px 20px;
 }
 
 #main .bottomInfo .contentBottomInfo h2 {
@@ -1616,6 +1617,10 @@ img {
 }
 
 @media screen and (max-width: 1500px) {
+  #main .item2, #main .item3, #main .item4, #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12, #main .item13,
+  #main .item14, #main .item15, #main .item16, #main .item17, #main .item18, #main .item19, #main .item20, #main .item21, #main .item22, #main .item23, #main .item24, #main .item25, #main .item26, #main .item27, #main .item28 {
+    width: 50%;
+  }
   #main .grid {
     width: 100% !important;
     background: #EEE;
@@ -1632,9 +1637,6 @@ img {
     -webkit-transform: translate(-20%, -20%);
     transform: translate(-20%, -20%);
     z-index: 999;
-  }
-  #main .item2 {
-    width: 50%;
   }
   #main .item2 .contentItem2 {
     position: absolute;
@@ -1660,9 +1662,6 @@ img {
     padding: 5px 10px 5px 20px;
     max-width: 240px;
   }
-  #main .item3 {
-    width: 50%;
-  }
   #main .item3 .contentItem3 {
     position: absolute;
     top: 28%;
@@ -1672,7 +1671,6 @@ img {
   }
   #main .item4 {
     position: relative;
-    width: 50%;
     background-color: #e9eae2;
   }
   #main .item4 .contentItem4 {
@@ -1693,10 +1691,6 @@ img {
   }
   #main .item4 .contentItem4 .image {
     padding-top: 50px;
-  }
-  #main .item5, #main .item6, #main .item7, #main .item8, #main .item9, #main .item10, #main .item11, #main .item12, #main .item13,
-  #main .item14, #main .item15, #main .item16, #main .item17, #main .item18, #main .item19, #main .item20, #main .item21, #main .item22, #main .item23, #main .item24, #main .item25, #main .item26, #main .item27, #main .item28 {
-    width: 49%;
   }
   #main .item14 .image {
     max-width: 60%;
@@ -1815,7 +1809,6 @@ img {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    padding: 0px 20px 0px 20px;
   }
   #main .bottomInfo .contentBottomInfo .container {
     max-width: 500px;
